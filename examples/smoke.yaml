@@ -1,0 +1,11 @@
+test:
+  name: Smoke test
+  steps:
+    - keyword: SET_VARIABLE
+      args:
+        name: greeting
+        value: hello
+    - keyword: ASSERT_EQUALS
+      args:
+        actual: ${greeting}
+        expected: hello
